@@ -19,10 +19,18 @@ Install-Module oh-my-posh -Scope CurrentUser
 ``` ps
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Paradox
+Set-PoshPrompt -Theme paradox
 ```
 
 Fix czech characters:
 ``` ps
 $env:LC_ALL = 'C.UTF-8'
 ```
+
+### Font
+
+Cascadia Code: https://github.com/microsoft/cascadia-code/releases
+
+Steps:
+1. Install `Cascadia Code PL` to system wide fonts
+
