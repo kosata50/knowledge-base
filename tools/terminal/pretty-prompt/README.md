@@ -5,15 +5,14 @@ Example:
 
 References: 
 - https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh
-- https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup
+- https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup
 
 ## Install
 
 Install PoweShell modules containing main magic fro pretty prompt.
 
 ``` ps
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+winget install JanDeDobbeleer.OhMyPosh
 ```
 
 
@@ -24,9 +23,7 @@ Update you PowerShell script to apply this setting each time PowerShell is start
 `notepad $PROFILE`
 
 ``` ps
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme thecyberden
+oh-my-posh init pwsh --config "C:\Tools\terminal\ohmyposhv3-kosata50.json" | Invoke-Expression
 ```
 
 Fix czech characters:
